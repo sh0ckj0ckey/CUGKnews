@@ -1,0 +1,15 @@
+<view class="{{hasFavorite? 'hide':'show'}}">
+  <view style="display: flex; align-items: center; justify-content: center; width: 100%; height: {{screen_height}}px; flex-direction: column; ">
+    <image style="width: 196rpx; height: 196rpx; align-items: center; vertical-align: center; opacity: 0.7; " src="{{empty_img}} "></image>
+    <text style='display: flex;  flex-direction: column;  align-items: center;  font-weight: bold;  opacity: 0.2;  vertical-align: center; margin-top: 8px;'>还没有收藏哦~~</text>
+  </view>
+</view>
+<view>
+  <loading hidden="{{!loading}} ">加载中...</loading>
+  <view style="display: block; flex-direction: row; align-items: center;" wx:for="{{favoritesTitle}}" wx:for-item="newsItem" data-index='{{index}}'>
+    <view id="{{index}}" style='display: flex; flex-direction: column;' hover-class='hover' catchtap='readNewsDetail'>
+      <text style='font-size:32rpx; margin-bottom: 36rpx; margin-top: 36rpx; margin-left: 24rpx; margin-right:24rpx;'>{{newsItem}}</text>
+      <view style='width: 100%; background: rgba(238,238,238,0.3); height: 8rpx;'></view>
+    </view>
+  </view>
+</view>

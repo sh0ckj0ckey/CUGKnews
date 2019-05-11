@@ -1,0 +1,4 @@
+/* pages/news/news.wxss */
+.hover {
+  background-color: #eee;
+}

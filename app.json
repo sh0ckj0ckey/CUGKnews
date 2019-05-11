@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/fav/fav",
+    "pages/me/me",
+    "pages/news/news",
+    "pages/reading/reading",
+    "pages/map/map",
+    "pages/tieba/tieba",
+    "pages/tiezi/tiezi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2b2c3f",
+    "navigationBarTitleText": "地大知了",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "Assets/Icon/home_icon.png",
+        "selectedIconPath": "Assets/Icon/selected_home_icon.png"
+      },
+      {
+        "pagePath": "pages/fav/fav",
+        "text": "收藏",
+        "iconPath": "Assets/Icon/fav_icon.png",
+        "selectedIconPath": "Assets/Icon/selected_fav_icon.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "Assets/Icon/me_icon.png",
+        "selectedIconPath": "Assets/Icon/selected_me_icon.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "这样才能显示天气"
+    }
+  }
+}

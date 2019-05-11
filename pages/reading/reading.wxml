@@ -1,0 +1,23 @@
+<!--pages/reading/reading.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<loading hidden="{{!loading}}">加载中...</loading>
+<view>
+  <text style='display: block; text-align:center; font-weight: bold; font-size: 42rpx; margin-top: 16px; margin-left: 32px; margin-right: 32px;'>{{arti_title}}</text>
+  <view style='margin: 24rpx;'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+  <view style='display: flex; flex-direction: row; align-items: center;'>
+    <button class="like-button" hover-class="like-btn-hover" bindtap="likeNews">
+      <view style="width:100%; font-size: 32rpx; display: flex; flex-direction: row; align-items: center; justify-content: center; vertical-align: center;">
+        <image style='height: 52rpx; width: 52rpx;' src='{{likeicon}}'></image>
+        <text style="color: white; margin-left: 12rpx;">{{liketext}}</text>
+      </view>
+    </button>
+    <button class="share-button" open-type='share' hover-class='share-btn-hover'>
+      <text style=" color: white; margin-left: 8rpx; align-items: center; justify-content: center; vertical-align: center; width: 100%; margin-bottom: 82rpx; font-size: 32rpx;">
+      分享
+    </text>
+    </button>
+  </view>
+  <text style='font-size: 24rpx; color: #4169E1; display: flex; flex-direction: column; align-items: center; margin: 16rpx; opacity: 0.8;'>- 地大知了 -</text>
+</view>

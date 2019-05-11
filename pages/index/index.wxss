@@ -1,0 +1,92 @@
+.main-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 36rpx;
+}
+
+.userinfo-avatar {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.userinfo-nickname {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 24;
+  font-stretch: expanded;
+  margin-left: 16rpx;
+}
+
+.userinfo-greeting {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 24;
+  font-stretch: expanded;
+  margin-left: 16rpx;
+}
+
+.list-button {
+  height: 128rpx;
+  margin-bottom: 12rpx;
+  margin-left: 36rpx;
+  margin-right: 36rpx;
+}
+
+.list-button::after {
+  border: 0;
+}
+
+.school-name {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 32rpx;
+  font-stretch: expanded;
+  margin-left: 16rpx;
+  opacity: 0.7;
+  display: flex-start;
+}
+
+.school-logo {
+  width: 76rpx;
+  height: 76rpx;
+  align-items: center;
+  vertical-align: center;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 50%;
+  margin-top: 26rpx;
+}
+
+.school-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -92rpx;
+  margin-left: 108rpx;
+}
+
+.btn-hover {
+  background-color: #eee;
+}
+
+.swiper {
+  height: 360rpx;
+  margin-top: 8rpx;
+  margin-bottom: 32rpx;
+  margin-left: 36rpx;
+  margin-right: 36rpx;
+}
+
+.slide-image {
+  height: 100%;
+  width: 100%;
+}

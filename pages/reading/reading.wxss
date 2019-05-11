@@ -1,0 +1,41 @@
+/* pages/reading/reading.wxss */
+
+button::after {
+  border: none;
+}
+
+.like-button {
+  height: 42px;
+  width: 164px;
+  border-radius: 30px;
+  margin-right: 6px;
+  background: #2b2c3f;
+  color: white;
+  margin-bottom: 64rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: center;
+}
+
+.share-button {
+  height: 42px;
+  width: 96px;
+  border-radius: 30px;
+  margin-left: 6px;
+  background: #f1a210;
+  color: white;
+  margin-bottom: 64rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: center;
+}
+
+.like-btn-hover {
+  background-color: #2b2c3fd5;
+}
+
+.share-btn-hover {
+  background-color: #f1a210a6;
+}

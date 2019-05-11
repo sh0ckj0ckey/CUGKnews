@@ -1,0 +1,15 @@
+<!--pages/news/news.wxml-->
+<view>
+  <loading hidden="{{!loading}}">加载中...</loading>
+  <view style="display: block; flex-direction: row; align-items: center;" wx:for="{{newsList}}" wx:for-item="newsItem" data-index='{{index}}'>
+    <view id="{{index}}" style='display: flex; flex-direction: column;' hover-class='hover' catchtap='readNewsDetail'>
+      <text style='font-size:32rpx; margin-bottom: 12rpx; margin-top: 24rpx; margin-left: 24rpx; margin-right:24rpx;'>{{newsItem.bt}}</text>
+      <text style='font-size:28rpx; font-weight: light; opacity: 0.7; margin-bottom: 12rpx; margin-top: 0rpx; margin-left: 24rpx; margin-right:24rpx;'>{{newsItem.jj}}</text>
+      <view style='position: relative; display: flex; flex-direction: row; align-items: center; margin-top: 8rpx; margin-bottom: 12rpx; margin-left: 24rpx; margin-right:24rpx;'>
+        <text style='font-weight: bold; font: "inherit"; font-size:22rpx; color:#228beb; align-items: center;'>{{newsItem.n}}-</text>
+        <text style='font-weight: bold; width: 96rpx; font: "inherit"; font-size:22rpx; color:#228beb;'>{{newsItem.yr}}</text>
+      </view>
+      <view style='width: 100%; background: rgba(238,238,238,0.3); height: 12rpx;'></view>
+    </view>
+  </view>
+</view>

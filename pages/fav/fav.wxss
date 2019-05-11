@@ -1,0 +1,11 @@
+.hover {
+  background-color: #eee;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

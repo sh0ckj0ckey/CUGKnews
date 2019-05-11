@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="main-view">
+  <view class="userinfo">
+    <open-data type="userAvatarUrl" class="userinfo-avatar" mode="cover"></open-data>
+    <open-data type="userNickName" class="userinfo-nickname"></open-data>
+    <text class='userinfo-greeting' bindtap='seeLog'>{{greetingWords}}</text>
+  </view>
+  <button style='background: #fff; margin-left: 12rpx; margin-top: -24rpx; margin-bottom: 0rpx;' class='list-button' hover-class='btn-hover'>
+    <view style='flex-direction: row'>
+      <image style='width: 0rpx; height: 76rpx; align-items: center; vertical-align: enter; display: flex; flex-direction: column; margin-top: 26rpx;'></image>
+      <view style='display: flex; flex-direction: column;align-items: flex-start; margin-top: -92rpx;'>
+        <text class='school-name'>今日{{weatherTitle}}，是个读新闻的好日子</text>
+        <text style='font-size:26rpx; margin-top:-36rpx; margin-left:18rpx; opacity:0.5;'>{{weatherTemp}}</text>
+      </view>
+    </view>
+  </button>
+  <image src='{{backgroudImg}}' style='height: 378rpx; width: 564rpx; opacity: 0.1; position: fixed; top: -32rpx; right: -156rpx;'></image>
+  <!--轮播图-->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="700">
+    <block wx:for="{{imgUrls}}" data-index='{{index}}'>
+      <swiper-item>
+        <image src="{{item}}" id="{{index}}" class="slide-image" mode="aspectFill" bindtap='clickSwiper' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--按钮列表-->
+  <button class='list-button' hover-class='btn-hover' bindtap='readCug'>
+    <view style='flex-direction: row'>
+      <image class='school-logo' src="{{cugImg}}"></image>
+      <view class='school-title'>
+        <text class='school-name'>地大新闻网</text>
+        <text style='font-size:26rpx; margin-top:-36rpx; margin-left:18rpx; opacity:0.5;'>地大之声</text>
+      </view>
+    </view>
+  </button>
+  <button class='list-button' hover-class='btn-hover' bindtap='readTieba'>
+    <view style='flex-direction: row'>
+      <image style='width: 58rpx; height: 58rpx; align-items: center; vertical-align: center; display: flex; flex-direction: column; background: #fff; border-radius: 50%; margin-top: 36rpx; margin-left: 10rpx;' src="{{tiebaImg}}"></image>
+      <view class='school-title' style='margin-top: -84rpx;'>
+        <text class='school-name'>百度贴吧</text>
+        <text style='font-size:26rpx; margin-top:-36rpx; margin-left:18rpx; opacity:0.5;'>中国地质大学吧</text>
+      </view>
+    </view>
+  </button>
+   <button class='list-button' hover-class='btn-hover' bindtap='readMap'>
+    <view style='flex-direction: row'>
+      <image style='width: 58rpx; height: 58rpx; align-items: center; vertical-align: center; display: flex; flex-direction: column; background: #fff; border-radius: 50%; margin-top: 36rpx; margin-left: 10rpx;' src="{{mapImg}}"></image>
+      <view class='school-title' style='margin-top: -84rpx;'>
+        <text class='school-name'>掌上地图</text>
+        <text style='font-size:26rpx; margin-top:-36rpx; margin-left:18rpx; opacity:0.5;'>中国地质大学地图</text>
+      </view>
+    </view>
+  </button>
+</view>

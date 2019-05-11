@@ -1,0 +1,10 @@
+<view>
+  <loading hidden="{{!loading}}">加载中...</loading>
+  <view style="display: block; flex-direction: row; align-items: center;" wx:for="{{tiebaList}}" wx:for-item="tiebaItem" data-index='{{index}}'>
+    <view id="{{index}}" style='display: flex; flex-direction: column;' hover-class='hover' catchtap='readTiebaDetail'>
+      <text style='font-size:32rpx; margin-top: 42rpx; margin-left: 24rpx; margin-right:24rpx;'>{{tiebaItem.title}}</text>
+      <text style=' direction: rtl; font-weight: bold; font: "inherit"; font-size:22rpx; color:#228beb; align-items: center; margin-bottom: 16rpx; margin-right: 24rpx; opacity: 0.7;'>{{tiebaItem.replyNum}}</text>
+      <view style='width: 100%; background: rgba(238,238,238,0.3); height: 12rpx;'></view>
+    </view>
+  </view>
+</view>
