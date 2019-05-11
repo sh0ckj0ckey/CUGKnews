@@ -1,6 +1,6 @@
 ## <b>地大知了 微信小程序</b>
 ### 中国地质大学(武汉) 白给小组 制作
-<img height="96" src="Assets/ads.png">
+![](Assets/README/ads.png)
 ---
 
 ### 应用介绍
