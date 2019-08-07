@@ -1,5 +1,5 @@
 ## <b>地大知了 微信小程序</b>
-### 中国地质大学(武汉) 白给小组 制作
+### 中国地质大学(武汉) 白给小组
 ![ads](Assets/README/ads.png)
 ---
 
@@ -13,15 +13,10 @@
 - 查看地大的地图
 
 ### 小程序截图 (图标及部分资源图片来自网络)
-#### 首页
-![首页](Assets/README/ss5.png)
-#### 地大之声
-![地大之声](Assets/README/ss1.png)
-#### 阅读文章并收藏
-![文章阅读](Assets/README/ss4.png)
-![文章收藏](Assets/README/ss2.png)
-#### 中国地质大学百度贴吧
-![地大之声](Assets/README/ss3.png)
+#### 功能
+![功能](Assets/README/1.jpg)
+#### 阅读
+![阅读](Assets/README/2.jpg)
 
 ### 引用
 | 名字 | 许可类型 | 项目网站 |
